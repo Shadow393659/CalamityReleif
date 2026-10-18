@@ -1,3 +1,4 @@
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -12,6 +13,7 @@ export default defineConfig({
       },
       '/socket.io': {
         target: 'https://calamityreleif.onrender.com',
+        changeOrigin: true,
         ws: true,
       },
     },
